@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+}
+
+body,html {
+	padding: 0;
+	margin: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+
+.header {
+    background-image: url(bg-main-mobile.png);
+    background-size: cover;
+	background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.cards img {
+    width: 300px;
+    height: auto;
+}
+
+
+
+.input-flex {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Space Grotesk';
+    margin: 2rem;
+}
+
+
+/* When the browser is at least 425px and above */
+@media screen and (min-width: 425px) {
+
+    .container {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header {
+        background-image: url(bg-main-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
