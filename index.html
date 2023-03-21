@@ -19,35 +19,38 @@
         <div class="header">
             <div class="cards">
                 <div class="card-1">
-                    <input type="number" id="cvc" placeholder="000">
+                    <p data-field="cvc">000</p>
                 </div>
                 <div class="card-2">
-                    <input type="number" id="cardnumber" minlength="12" placeholder="0000 0000 0000 0000">
-                    <input type="text" id="cardholder" placeholder="Jane Appleseed">
+                    <p data-field="cardNumber">0000 0000 0000 0000</p>
                     <div class="exp-date-flex">
-                        <input type="number" id="month" placeholder="00"><input type="number" id="year" placeholder="00">
+                        <p data-field="cardHolder">Jane Appleseed</p>
+                        <p>
+                            <span data-field="month">01</span>/<span data-field="year">22</span>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="input-flex">
-
             <label for="cardholder">CARDHOLDER NAME</label>
-            <input type="text" id="cardholder" placeholder="e.g Jane Appleseed">
+            <input type="text" id="cardHolder" data-input placeholder="e.g Jane Appleseed">
             <label for="cardnumber">CARD NUMBER </label>
-            <input type="number" id="cardnumber" placeholder="e.g 1234 5678 9123 0000" minlength="12">
+            <input type="number" id="cardNumber" data-input placeholder="e.g 1234 5678 9123 0000" minlength="12">
             <div class="exp-date-flex">
                 <label for="exp-date">EXP. DATE (MM/YY)</label>
                 <label for="cvc">CVC</label>
                 <div class="input-label">
-                    <input type="number" id="month" placeholder="MM" max="12" min="01">
-                    <input type="number" id="year" placeholder="YY">
-                    <input type="number" id="cvc" placeholder="e.g 123" minlength="3" maxlength="3">
+                    <input type="number" id="month" data-input placeholder="MM" max="12" min="01">
+                    <input type="number" id="year" data-input placeholder="YY">
+                    <input type="number" id="cvc" data-input placeholder="e.g 123" minlength="3" maxlength="3">
                 </div>
             </div>
             <button type="submit">Confirm</button>
         </div>
     </div>
+    <!--<script src="./main.js"></script>-->
+    <script src="./test-main.js"></script>
 </body>
 
 </html>
