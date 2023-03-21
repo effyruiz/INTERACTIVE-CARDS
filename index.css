@@ -52,14 +52,13 @@ body,html {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
-    margin-left: 1rem;
-    margin-right:1rem ;
 }
 
 .input-flex label {
     font-size: small;
     margin-bottom: 0.5rem;
-    color: hsl(278, 68%, 11%);
+    color: #21092f;
+    letter-spacing: 0.2em
 }
 
 .input-flex input {
@@ -70,13 +69,29 @@ body,html {
     border-radius: 10px;
     border-style: solid;
     border-color: #cccccc;
+    letter-spacing: 0.05em;
     font-family: 'Space Grotesk'
-    
+ 
     
 }
 
 .exp-date-flex input {
     width: 4rem;
+}
+
+.input-label #cvc {
+    width: 6rem;
+}
+
+button {
+    background-color: #21092f;
+    color: #ffff;
+    padding: 0.7rem;
+    font-family: 'Space Grotesk';
+    border-radius: 10px;
+    font-size: large;
+    letter-spacing: 0.05em;
+    margin-top: 1rem;
 }
 
 
@@ -108,6 +123,7 @@ body,html {
         width: 65%;
         margin-left: 10rem;
         margin-right: 10rem;
+        margin-top: -2rem;
     }
 
     .card-1 {
