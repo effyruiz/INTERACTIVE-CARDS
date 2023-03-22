@@ -36,6 +36,15 @@ body,html {
     margin-left: 6rem;
     margin-top: 1rem;
     padding: 3.7rem;
+    letter-spacing: 0.1em;
+    color: hsl(270, 3%, 87%);
+}
+
+.card-1 p {
+    margin-top: 0.13rem;
+    margin-left: 8.6rem;
+    margin-bottom: 0;
+    font-size: 0.8rem;
 }
 
 .card-2 {
@@ -46,12 +55,15 @@ body,html {
     background-size: contain;
     margin-left: 1rem;
     margin-top: -6rem;
+    letter-spacing: 0.1em;
+    color:hsl(270, 3%, 87%);
 }
 
 .input-flex {
     display: flex;
     flex-direction: column;
     margin-top: 5rem;
+    width: 85%;
 }
 
 .input-flex label {
@@ -59,20 +71,52 @@ body,html {
     margin-bottom: 0.5rem;
     color: #21092f;
     letter-spacing: 0.2em
+    
 }
 
 .input-flex input {
     font-size: large;
     margin-bottom: 1rem;
-    height: 2.3rem;
+    height: 3rem;
     padding-left: 1rem;
     border-radius: 10px;
     border-style: solid;
     border-color: #cccccc;
     letter-spacing: 0.05em;
     font-family: 'Space Grotesk'
+}
+
+.input-flex :placeholder-shown {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+
+.exp-date-flex input {
+  margin-top: 0.5rem;
+}
+
+.card-2 img {
+    width: 55px;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+}
+
+.exp-date-card-flex {
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+}
+
  
-    
+.card-2 .cardNumber {
+    font-size: medium ;
+    padding-left: 1rem;
+    margin-top: 1.7rem;
+    margin-bottom: 0;
 }
 
 .exp-date-flex input {
@@ -80,7 +124,11 @@ body,html {
 }
 
 .input-label #cvc {
-    width: 6rem;
+    width: 10.8rem;
+}
+
+.input-flex .input-label #cvc {
+    margin-left: 0.6rem;
 }
 
 button {
@@ -110,31 +158,68 @@ button {
         background-size: cover;
         background-repeat: no-repeat;
         height: 645px;
-        width: 50%;
+        width: 30%;
         
     }
 
     .cards {
         display: flex;
         flex-direction: column-reverse;
+        margin-left: 3.5rem;
     }
 
     .input-flex {
-        width: 65%;
-        margin-left: 10rem;
+        width: 50%;
+        margin-left: 15rem;
         margin-right: 10rem;
         margin-top: -2rem;
     }
 
+    .input-flex :placeholder-shown {
+        font-size: medium;
+        opacity: 0.5;
+    }
+
     .card-1 {
-       width: 300px;
+       width: 600px;
+    }
+
+    .card-1 p {
+        font-size: 0.8rem;
+        margin-top: 1.2rem;
+        margin-left: 12rem;
     }
 
     .card-2 {
         margin-left: 1rem;
         margin-top: 10rem;
         margin-bottom: 0.5rem;
-        width: 300px;
+        width: 600px;
     }
     
-}
+    .card-2 img {
+        width: 70px;
+        margin-left: 1.4rem;
+        margin-top: 1.4rem;
+    }
+
+    .card-2 .cardNumber {
+        font-size: larger ;
+        padding-left: 1.5rem;
+        margin-top: 2.3rem;
+        margin-bottom: 0;
+    }
+    .exp-date-card-flex {
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: space-between;
+        width: 52.5%;
+        padding-left: 1.5rem;
+        padding-bottom: 0;
+        margin-top: 0.3rem;
+
+    }
+    .input-label #cvc {
+        width: 16.1rem;
+    }
+    }
