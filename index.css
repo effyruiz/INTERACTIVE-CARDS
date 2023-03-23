@@ -120,15 +120,17 @@ body,html {
 }
 
 .exp-date-flex input {
-    width: 4rem;
-}
-
-.input-label #cvc {
-    width: 10.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 20%;
 }
 
 .input-flex .input-label #cvc {
     margin-left: 0.6rem;
+}
+
+.input-flex .input-label #cvc {
+    width: 51%;
 }
 
 button {
@@ -142,7 +144,40 @@ button {
     margin-top: 1rem;
 }
 
+.input-flex-completed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 100%;
+}
 
+.complete-info {
+    display: none;
+    letter-spacing: 0.1em;
+}
+
+.complete-info img {
+    margin-left: 39%;
+    margin-bottom: 1.7rem;
+}
+
+.complete-info h1 {
+    letter-spacing: 0.2em;
+    margin-left: 14%;
+    width: 100%;
+    color: #21092f;
+}
+
+.complete-info p {
+    margin-left: 7%;
+    width: 100%;
+    color: hsl(279, 6%, 55%);
+}
+
+
+.complete-info button {
+    width: 100%;
+}
 /* When the browser is at least 425px and above */
 @media screen and (min-width: 425px) {
 
@@ -219,7 +254,5 @@ button {
         margin-top: 0.3rem;
 
     }
-    .input-label #cvc {
-        width: 16.1rem;
-    }
+   
     }
