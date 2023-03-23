@@ -145,38 +145,74 @@ button {
 }
 
 .input-flex-completed {
-    display: flex;
-    flex-direction: column;
     margin-top: 5rem;
-    width: 100%;
+    width: 85%;
 }
 
 .complete-info {
-    display: none;
+    display: flex;
+    flex-direction: column;
     letter-spacing: 0.1em;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
 }
 
 .complete-info img {
-    margin-left: 39%;
     margin-bottom: 1.7rem;
 }
 
 .complete-info h1 {
+    font-size: 1.7rem;
     letter-spacing: 0.2em;
-    margin-left: 14%;
-    width: 100%;
     color: #21092f;
 }
 
 .complete-info p {
-    margin-left: 7%;
     width: 100%;
     color: hsl(279, 6%, 55%);
+    padding-left: 1.2rem;
 }
 
 
 .complete-info button {
     width: 100%;
+    margin-bottom: 4rem;
+}
+
+.input-flex-completed .complete-info::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.input-flex-completed .complete-info::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.input-flex-completed {
+	position: absolute;
+	width: 100%;
+	top: 4rem;
+    left: 0;
+    padding: 1rem;
+	transition: all .3s ease;
+	transform: scaleY(1);
+	visibility: visible;
+    z-index: 9999;
+}
+
+.header-ham-right.hide {
+	transform: scaleY(0);
+	visibility: hidden;
 }
 /* When the browser is at least 425px and above */
 @media screen and (min-width: 425px) {
