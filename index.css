@@ -194,21 +194,11 @@ button {
 }
 
 #input-flex-completed {
-    display: none;
-	position: absolute;
-	width: 100%;
-	top: 4rem;
-	left: 0;
 	padding: 1rem;
-	transition: all 0.3s ease;
-	transform: scaleY(1);
-	visibility: visible;
-	z-index: 9999;
 }
 
-.header-ham-right.hide {
-	transform: scaleY(0);
-	visibility: hidden;
+.hide {
+	display: none;
 }
 /* When the browser is at least 768px and above */
 @media screen and (min-width: 768px) {
