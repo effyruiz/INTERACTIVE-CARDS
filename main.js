@@ -1,3 +1,7 @@
+/**
+* RELLENAR LOS CAMPOS DE LAS TARJETAS
+*/
+
 // Obtener cada input de la pagina / capturar elementos
 const dataInputs = document.querySelectorAll('[data-input]');
 
@@ -16,3 +20,19 @@ function changeCardValues(e) {
     // CAmbiar el text interno del nodo o elmento html por el valor del input
     placeholderText.innerText = inputValue;
 }
+
+/**
+ * Validar formulario
+ */
+
+// Atrapar formulario en el DOM
+const cardForm = document.querySelector('[data-form]');
+
+console.log('card', cardForm)
+// Agregar evento submit al formulario (formulario ha sido enviado)
+cardForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log('Formulario enviado', e.target);
+});
+
+
